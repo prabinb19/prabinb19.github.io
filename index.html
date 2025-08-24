@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Portfolio</title>
+    <!-- Import Fira Code font for an authentic IDE feel -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar (Left Column) -->
+      <aside class="sidebar">
+        <!-- REPLACE 'profile.jpg' with the name of your image file -->
+        <img src="profile.jpg" alt="Profile Picture" class="profile-pic" />
+
+        <div class="sidebar-section">
+          <span class="kw">enum</span> <span class="type">PLATFORMS</span> {
+          <div class="indent">
+            Windows,<br />
+            Linux,<br />
+            Mobile,<br />
+            Web
+          </div>
+          }
+        </div>
+
+        <div class="sidebar-section">
+          <span class="kw">enum</span> <span class="type">LANGUAGES</span> {
+          <div class="indent">
+            C#, C++,<br />
+            Python, Java,<br />
+            TypeScript, PHP,<br />
+            HTML5, CSS3
+          </div>
+          }
+        </div>
+
+        <div class="sidebar-section">
+          <span class="type">TOOLS</span> {
+          <div class="indent">
+            ReactJS, NodeJS,<br />
+            NextJS, Unreal,<br />
+            VisualStudio,<br />
+            GitHub, Docker,<br />
+            Figma, Photoshop
+          </div>
+          }
+        </div>
+
+        <div class="sidebar-section">
+          <span class="type">LANGUAGES_SPOKEN</span> {
+          <div class="indent">
+            English = <span class="str">'Fluent'</span>;<br />
+            Nepali = <span class="str">'Native'</span>;<br />
+          </div>
+          }
+        </div>
+
+        <div class="sidebar-section">
+          <span class="type">PROFILE</span> {
+          <div class="indent">
+            LEADER,<br />
+            CREATIVE
+          </div>
+          }
+        </div>
+      </aside>
+
+      <!-- Main Content (Right Column) -->
+      <main class="main-content">
+        <div class="code-block">
+          <p><span class="cmt">/// &lt;summary&gt;</span></p>
+          <p>
+            <span class="cmt">/// Seeking collaborations and partnerships</span>
+          </p>
+          <p>
+            <span class="cmt">/// in Software Development (Web & Mobile)</span>
+          </p>
+          <p><span class="cmt">/// Solutions, and IT Consultancy.</span></p>
+          <p>
+            <span class="cmt"
+              >/// Passionate about building scalable digital products.</span
+            >
+          </p>
+          <p><span class="cmt">/// Available for projects worldwide.</span></p>
+          <p><span class="cmt">/// &lt;/summary&gt;</span></p>
+        </div>
+
+        <!-- INFORMATION Section -->
+        <div class="code-block">
+          <p>
+            <span class="kw">public class</span>
+            <span class="type">INFORMATION</span> {
+          </p>
+          <div class="indent">
+            <p>
+              <span class="kw">public string</span> Name =
+              <span class="str">"Prabin"</span>;
+            </p>
+            <p>
+              <span class="kw">public string</span> Title =
+              <span class="str">"Honors Student | Software Engineer"</span>;
+            </p>
+            <p>
+              <span class="kw">public string</span> Email =
+              <span class="str">"bajgaiprabin@gmail.com"</span>;
+            </p>
+            <p>
+              <span class="kw">public string</span> PHONE =
+              <span class="str">"+1 769 378 0415"</span>;
+            </p>
+            <p>
+              <span class="kw">public List</span> LOCATION = [
+              <span class="str">'Hattiesburg'</span>,
+              <span class="str">'Mississippi'</span> ];
+            </p>
+            <p>
+              <span class="kw">public bool</span> VEHICLE_LICENSE =
+              <span class="kw">true</span>;
+            </p>
+            <p>
+              <span class="kw">public int</span> AGE =
+              <span class="num">22</span>;
+            </p>
+          </div>
+          <p>}</p>
+        </div>
+
+        <!-- EDUCATION Section -->
+        <div class="code-block">
+          <p>
+            <span class="kw">public static class</span>
+            <span class="type">EDUCATION</span> {
+          </p>
+          <div class="indent">
+            <p>
+              <span class="kw">private void</span>
+              <span class="func">University</span>() {
+            </p>
+            <div class="indent">
+              <p>
+                <span class="kw">var</span> Level =
+                <span class="str">"Bachelor's Degree"</span>;
+              </p>
+              <p>
+                <span class="kw">var</span> Field =
+                <span class="str">"Computer Science"</span>;
+              </p>
+              <p>
+                <span class="kw">var</span> Date =
+                <span class="str">"Expected 2026"</span>;
+              </p>
+              <p>
+                <span class="kw">var</span> Institution =
+                <span class="str">"University of Southern Mississippi"</span>;
+              </p>
+            </div>
+            <p>}</p>
+          </div>
+          <p>}</p>
+        </div>
+
+        <!-- EXPERIENCE Section -->
+        <div class="code-block">
+          <p>
+            <span class="kw">public static class</span>
+            <span class="type">EXPERIENCE</span> {
+          </p>
+          <div class="indent">
+            <p>
+              <span class="kw">public void</span>
+              <span class="func">VOXO</span>() {
+            </p>
+            <div class="indent">
+              <p>
+                <span class="kw">var</span> Duration =
+                <span class="func">Range</span>(start:
+                <span class="str">'2024'</span>, end:
+                <span class="str">'2025'</span>);
+              </p>
+              <p>
+                <span class="kw">var</span> Role =
+                <span class="str">"Software Engineering Intern"</span>;
+              </p>
+              <p>
+                <span class="kw">var</span> Type =
+                <span class="str">"Startup"</span>;
+              </p>
+              <br />
+              <p>
+                <span class="cmt"
+                  >// Designed and deployed full-stack (Vue, Node.js) features
+                  in VOXO Connect, including video invites, SMS retry, and
+                  message drafts, streamlining the sales team’s communication
+                  workflows and saving 4+ hours per week.</span
+                >
+              </p>
+              <p>
+                <span class="cmt"
+                  >// Led development of white-label automation and real-time
+                  notification controls with GitHub Actions CI/CD, cutting
+                  deployment cycle time by 40%.</span
+                >
+              </p>
+              <p>
+                <span class="cmt"
+                  >// Designed and developed an admin panel proof of concept for
+                  VOXO’s MVP dashboard, implementing dynamic form generation
+                  from JSON files.</span
+                >
+              </p>
+            </div>
+            <p>}</p>
+            <p>
+              <span class="kw">public void</span>
+              <span class="func">CyberInnovationsLab</span>() {
+            </p>
+            <div class="indent">
+              <p>
+                <span class="kw">var</span> Duration =
+                <span class="func">Range</span>(start:
+                <span class="str">'2023-07'</span>, end:
+                <span class="str">'2024-11'</span>);
+              </p>
+              <p>
+                <span class="kw">var</span> Role =
+                <span class="str">"Machine Learning Research Assistant"</span>;
+              </p>
+              <p>
+                <span class="kw">var</span> Type =
+                <span class="str">"Research Lab"</span>;
+              </p>
+              <p>
+                <span class="kw">var</span> Location =
+                <span class="str">"Hattiesburg, MS"</span>;
+              </p>
+              <br />
+              <p>
+                <span class="cmt"
+                  >// Developed supervised ML models (Multilayer Perceptrons in
+                  PyTorch/scikit-learn) using heuristic techniques to detect
+                  zero-day attacks, resulting in a threat classification
+                  accuracy of 98%.</span
+                >
+              </p>
+              <p>
+                <span class="cmt"
+                  >// Publication in Springer Nature Switzerland — Analysis of
+                  Zero Day Attack Detection Using MLP and XAI</span
+                >
+              </p>
+            </div>
+            <p>}</p>
+          </div>
+          <p>}</p>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+/* Define the color palette (VS Code Dark+ inspired) */
+:root {
+  --bg-dark: #1e1e1e;
+  --text-default: #d4d4d4;
+  --keyword-blue: #569cd6; /* public, var, true/false, enum */
+  --type-teal: #4ec9b0; /* Class names, Types */
+  --string-orange: #ce9178; /* "Strings" */
+  --comment-green: #6a9955; /* Comments */
+  --number-lightgreen: #b5cea8; /* Numbers */
+  --function-yellow: #dcdcaa; /* Function calls */
+}
+
+/* Base Styles */
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-default);
+  font-family: "Fira Code", Consolas, Monaco, "Andale Mono", monospace;
+  margin: 0;
+  padding: 30px;
+  line-height: 1.6;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+/* Layout */
+.sidebar {
+  flex: 1;
+  max-width: 280px;
+}
+
+.main-content {
+  flex: 3;
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  margin-bottom: 30px;
+  border: 1px solid #444;
+}
+
+/* Content Sections */
+.sidebar-section {
+  margin-bottom: 25px;
+}
+
+.code-block {
+  margin-bottom: 25px;
+}
+
+/* Ensure paragraphs don't add extra space, maintaining the code look */
+.code-block p {
+  margin: 0;
+}
+
+.indent {
+  padding-left: 30px;
+}
+
+/* Syntax Highlighting Utility Classes */
+.kw {
+  color: var(--keyword-blue);
+}
+.str {
+  color: var(--string-orange);
+}
+.cmt {
+  color: var(--comment-green);
+  font-style: italic;
+}
+.type {
+  color: var(--type-teal);
+}
+.num {
+  color: var(--number-lightgreen);
+}
+.func {
+  color: var(--function-yellow);
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 850px) {
+  .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .sidebar {
+    max-width: 100%;
+  }
+  .profile-pic {
+    max-width: 150px;
+  }
+  body {
+    padding: 15px;
+  }
+}
